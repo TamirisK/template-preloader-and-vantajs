@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/loader.css" />
+  </head>
+  <body>
+    <section class="loader"></section>
+
+    <header>
+      <div class="header__container">
+        <!-- <img src="" alt="LOGO" class="nav__logo" /> -->
+        LOGO
+        <nav>
+          <ul class="nav__menu">
+            <li><a href="#welcome" class="nav__link">Home</a></li>
+            <li><a href="#" class="nav__link">Nav 1</a></li>
+            <li><a href="#" class="nav__link">Nav 2</a></li>
+            <li><a href="#" class="nav__link">Nav 3</a></li>
+          </ul>
+        </nav>
+        <button class="btn__login">Log In</button>
+      </div>
+    </header>
+
+    <section class="welcome" id="welcome">
+      <div class="welcome__container">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+          voluptatem dolorem quibusdam dicta, labore ut officia eum a? Rerum
+          deleniti debitis ea perspiciatis sequi quam veritatis dolor aliquam
+          hic. Quam.
+        </p>
+      </div>
+    </section>
+
+    <script src="./js/three.r134.min.js"></script>
+    <script src="./js/vanta.dots.min.js"></script>
+    <script>
+      VANTA.DOTS({
+        el: "#welcome",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+      });
+    </script>
+
+    <script src="./js/loader.js"></script>
+  </body>
+</html>
